@@ -16,7 +16,7 @@ props:['product']
 }
 </script>
 
-<style>
+<style  scoped>
 .product-item {
     align-items: center;
     border-radius: 8px;

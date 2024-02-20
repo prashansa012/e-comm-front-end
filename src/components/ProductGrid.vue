@@ -1,6 +1,6 @@
 <template>
   <div class="grid-wrap">
-    <ProductsGrideItem v-for="product in products" :key="product.id" :product="product"/>
+    <ProductGridItem v-for="product in products" :key="product.id" :product="product"/>
 
   </div>
 </template>
