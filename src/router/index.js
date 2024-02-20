@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import CartPage from '../views/CartPage.vue'
 import ProductDetailPage from '../views/ProductDetailPage.vue'
 import ProductPage from '../views/ProductPage.vue'
+import NotFoundPage from '../views/NotFoundPage.vue'
 
 Vue.use(VueRouter)
 
@@ -24,6 +25,11 @@ component:ProductPage
   },{
   path:'/',
   redirect:'/products'
+  },
+  {
+    path:'*',
+    component:NotFoundPage
+
   }
 ]
 
